@@ -1,0 +1,18 @@
+body{
+  background-image: url('backgroung.jpg')
+}
+
+.mainTitle{
+  text-align: center;
+  color: #e68a00
+}
+
+ .line {
+   border: 1px solid black;
+   margin-top: 1%;
+   margin-bottom: 1%; }
+
+.quote{
+  text-align: center;
+  font: italic 1.8em "Fira Sans", serif;
+}
