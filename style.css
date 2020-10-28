@@ -1,6 +1,9 @@
 body{
   background-image: url('backgroung.jpg')
 }
+.center{
+  text-align: center;
+}
 
 .mainTitle{
   text-align: center;
@@ -15,4 +18,11 @@ body{
 .quote{
   text-align: center;
   font: italic 1.8em "Fira Sans", serif;
+}
+
+.imgAlign{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
