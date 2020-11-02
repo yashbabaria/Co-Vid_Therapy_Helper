@@ -22,8 +22,7 @@ body{
 
 .imgAlign{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 50%;
 }
 .column {
@@ -36,4 +35,17 @@ body{
   content: "";
   clear: both;
   display: table;
+}
+
+.TalkSpace p{
+  text-align: center;
+  font-size: 15px
+}
+
+.Desc{
+  font-family: cursive;
+}
+
+.instruct{
+  font-weight: bold;
 }
