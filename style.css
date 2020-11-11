@@ -19,6 +19,12 @@ body{
   text-align: center;
   font: italic 1.8em "Fira Sans", serif;
 }
+.authorImg{
+  display: block;
+  margin: auto;
+  width: 20%;
+  height: auto;
+}
 
 .imgAlign{
   display: block;
