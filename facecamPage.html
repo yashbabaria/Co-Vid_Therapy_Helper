@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./face-api/face-api.js"></script>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CO-Vid Therapy Helper</title>
   </head>
   <body>
@@ -11,11 +13,23 @@
         <p class="line"></p>
         <h2 class="quote">A Bond We Need</h2>
     </div>
-    <div class="">
-      <h1>UNDER CONSTRUCTION</h1>
-      <p>
-        <a href="./index.html">Back Home</a>
-      </p>
+    <h1>UNDER CONSTRUCTION</h1>
+    <div class="container">
+  		<div id="video-container">
+  			<video id="camera-stream" autoplay playsinline></video>
+  			<canvas id="overlay"></canvas>
+  		</div>
+      <span id="mood-detection">
+    		<h3>use mood detection</h3>
+    		<label class="switch" >
+    			<input onclick="toggleMoodDetectionMode()" type="checkbox">
+    			<span class="slider round"></span>
+    		</label>
+    	</span>
     </div>
+    <script type="text/javascript" src="./face-api/script.js"></script>
+    <p>
+      <a href="./index.html">Back Home</a>
+    </p>
   </body>
 </html>
