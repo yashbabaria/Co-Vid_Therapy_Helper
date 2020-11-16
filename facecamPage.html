@@ -2,9 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="./face-api/face-api.js"></script>
-  	<link rel="stylesheet" type="text/css" href="style.css">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="./style.css">
     <title>CO-Vid Therapy Helper</title>
   </head>
   <body>
@@ -13,21 +11,31 @@
         <p class="line"></p>
         <h2 class="quote">A Bond We Need</h2>
     </div>
-    <h1>UNDER CONSTRUCTION</h1>
-    <div class="container">
-  		<div id="video-container">
-  			<video id="camera-stream" autoplay playsinline></video>
-  			<canvas id="overlay"></canvas>
-  		</div>
-      <span id="mood-detection">
-    		<h3>use mood detection</h3>
-    		<label class="switch" >
-    			<input onclick="toggleMoodDetectionMode()" type="checkbox">
-    			<span class="slider round"></span>
-    		</label>
-    	</span>
+    
+    <h1 class="cam">Anti-Depressing Facecam</h1>
+
+    <div class="top-container">
+      <video id="video">Stream not available...</video>
+      <button id="photo-button" class="btn btn-dark">
+        Take Photo
+      </button>
+      <select id="photo-filter" class="select">
+        <option value="none">Normal</option>
+        <option value="grayscale(100%)">Grayscale</option>
+        <option value="sepia(100%)">Sepia</option>
+        <option value="invert(100%)">Invert</option>
+        <option value="hue-rotate(90deg)">Hue</option>
+        <option value="blur(10px)">Blur</option>
+        <option value="contrast(200%)">Contrast</option>
+      </select>
+      <button id="clear-button" class="btn btn-light">Clear</button>
+      <canvas id="canvas"></canvas>
     </div>
-    <script type="text/javascript" src="./face-api/script.js"></script>
+    <div class="bottom-container">
+      <div id="photos"></div>
+    </div>
+
+    <script src="js/videoFilter.js"></script>
     <p>
       <a href="./index.html">Back Home</a>
     </p>
