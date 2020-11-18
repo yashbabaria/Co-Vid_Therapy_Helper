@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../style.css">
     <title>CO-Vid Therapy Helper</title>
     <script defer src="../js/app.js" charset="utf-8"></script>
+
   </head>
   <body>
     <div>
@@ -16,7 +17,7 @@
     <h1>UNDER CONSTRUCTION</h1>
 
     <div id="outside">
-      <form id="survey-form" action="/survey-completed" method="post">
+      <form id="survey-form">
 
           <p id="description"><b>Note:</b> Please be as honest as you can to recieve the best care possible</p>
 
@@ -26,7 +27,7 @@
 
             <div>
               <label for="Age">What is your Age?</label>
-              <input type="number" id="Age" name="Age" min="1" step="1" required>  
+              <input type="number" id="Age" name="Age" min="10" step="1" required>  
             </div>
             <br>
             <div>
@@ -35,7 +36,8 @@
                 <input type="radio" name="gender" value="male" required> Male<br>
                 <input type="radio" name="gender" value="female"> Female<br>
                 <input type="radio" name="gender" value="transgender"> Transgender<br>
-                <input type="radio" name="gender" value="other"> Other
+                <input type="radio" name="gender" value="other"> Other <br>
+                <input type="radio" name="gender" value="no"> Prefer Not Wish to Answer
               </p>
             </div>
 
@@ -45,7 +47,8 @@
                 <input type="radio" name="SO" value="straight" required> Straight<br>
                 <input type="radio" name="SO" value="lesbian"> Lesbian<br>
                 <input type="radio" name="SO" value="gay"> Gay<br>
-                <input type="radio" name="SO" value="other"> Other
+                <input type="radio" name="SO" value="other"> Other <br>
+                <input type="radio" name="SO" value="no"> Prefer Not Wish to Answer
               </p>
             </div>
 
@@ -55,9 +58,9 @@
             <div>
               <label> Do you have health insurance? </label>
               <select id="dropdown">
-                <option value="no">N/A</option>
-                <option value="left">Yes </option>
-                <option value="right">No</option>
+                <option value="notToSay">N/A</option>
+                <option value="yes">Yes </option>
+                <option value="no">No</option>
               </select>
             </div>
             <br>
@@ -66,8 +69,7 @@
               <p>
                 <input type="radio" name="price" value="Less" required> Less than $50 a session <br>
                 <input type="radio" name="price" value="Middle"> $60 to $80 a session  <br>
-                <input type="radio" name="price" value="High"> Around $100 a session <br>
-                <input type="radio" name="price" value="any"> I am willing to pay anything <br>
+                <input type="radio" name="price" value="High"> Around and More than $100 a session<br>
                 <input type="radio" name="price" value="insur"> My insurance should cover the cost
               </p>
             </div>
@@ -89,7 +91,7 @@
               <input type="checkbox" name="mental" value="OCD">
               <label>OCD</label><br>
               <input type="checkbox" name="mental" value="couple">
-              <label>Couple's Therapy</label><br>
+              <label>Couple's or Relationship Therapy</label><br>
               <input type="checkbox" name="mental" value="trauma">
               <label>PTSD/Trauma</label><br>
               <input type="checkbox" name="mental" value="insomnia">
@@ -112,8 +114,8 @@
             <input type="radio" name="game" value="no"> No <br>
           </fieldset>
           <br>
-          <button type="submit" class="submit">Send your application</button>  
 
+          <button type="submit"> Send your application</button>
 
       </form>
     </div>
