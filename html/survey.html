@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style.css">
+    <title>CO-Vid Therapy Helper</title>
+    <script defer src="../js/app.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <div>
+        <h1 class="mainTitle">Co-Vid Therapy Helper</h1>
+        <h2 class="quote">A Bond We Need</h2>
+      <script></script>
+
+    </div>
+    <h1>UNDER CONSTRUCTION</h1>
+
+    <div id="outside">
+      <form id="survey-form">
+
+          <p id="description"><b>Note:</b> Please be as honest as you can to recieve the best care possible</p>
+
+
+          <fieldset>
+
+
+            <div>
+              <label for="Age">What is your Age?</label>
+              <input type="number" id="Age" name="Age" min="10" step="1" required>  
+            </div>
+            <br>
+            <div>
+              <label for="Gender">Gender</label>
+              <p>
+                <input type="radio" name="gender" value="male" required> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="transgender"> Transgender<br>
+                <input type="radio" name="gender" value="other"> Other <br>
+                <input type="radio" name="gender" value="no"> Prefer Not Wish to Answer
+              </p>
+            </div>
+
+            <div>
+              <label for="SO">Sexual Orientation</label>
+              <p>
+                <input type="radio" name="SO" value="straight" required> Straight<br>
+                <input type="radio" name="SO" value="lesbian"> Lesbian<br>
+                <input type="radio" name="SO" value="gay"> Gay<br>
+                <input type="radio" name="SO" value="other"> Other <br>
+                <input type="radio" name="SO" value="no"> Prefer Not Wish to Answer
+              </p>
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <div>
+              <label> Do you have health insurance? </label>
+              <select id="dropdown">
+                <option value="notToSay">N/A</option>
+                <option value="yes">Yes </option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <br>
+            <div>
+              <label for="">How much are you willing to pay for Therapy?</label>
+              <p>
+                <input type="radio" name="price" value="Less" required> Less than $50 a session <br>
+                <input type="radio" name="price" value="Middle"> $60 to $80 a session  <br>
+                <input type="radio" name="price" value="High"> Around and More than $100 a session<br>
+                <input type="radio" name="price" value="insur"> My insurance should cover the cost
+              </p>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <label for="mental">What type(s) of mental health issue do you need counseling for? Check all that apply.</label>
+            <p>
+              <input type="checkbox" name="mental" value="anxiety">
+              <label>Anxiety</label><br>
+              <input type="checkbox" name="mental" value="depression">
+              <label>Depression</label><br>
+              <input type="checkbox" name="mental" value="stress">
+              <label>Stress Management</label><br>
+              <input type="checkbox" name="mental" value="LGBTQ">
+              <label>LGBTQ Counseling</label><br>
+              <input type="checkbox" name="mental" value="grief">
+              <label>Grief</label><br>
+              <input type="checkbox" name="mental" value="OCD">
+              <label>OCD</label><br>
+              <input type="checkbox" name="mental" value="couple">
+              <label>Couple's or Relationship Therapy</label><br>
+              <input type="checkbox" name="mental" value="trauma">
+              <label>PTSD/Trauma</label><br>
+              <input type="checkbox" name="mental" value="insomnia">
+              <label>Insomnia</label><br>
+              <input type="checkbox" name="mental" value="transition">
+              <label>Life Transition</label>
+            </p>
+
+            <label for="care">Are you in need of Psychiatric Care?</label>
+            <input type="radio" name="care" value="yes" required> Yes
+            <input type="radio" name="care" value="no"> No <br>
+
+            <label for="online">What type of online service are you looking for?</label>
+            <input type="radio" name="online" value="video" required> Video Conference
+            <input type="radio" name="online" value="message"> Messaging
+            <input type="radio" name="online" value="both"> All the Above <br>
+
+            <label for="game">Do you play Video Games?</label>
+            <input type="radio" name="game" value="yes" required> Yes
+            <input type="radio" name="game" value="no"> No <br>
+          </fieldset>
+          <br>
+
+          <button type="submit"> Send your application</button>
+
+      </form>
+    </div>
+    <p>
+      <a href="./index.html">Back Home</a>
+    </p>
+  </body>
+</html>

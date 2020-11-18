@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  	<link rel="stylesheet" type="text/css" href="../style.css">
+    <title>CO-Vid Therapy Helper</title>
+  </head>
+  <body>
+    <div>
+        <h1 class="mainTitle">Co-Vid Therapy Helper</h1>
+        <p class="line"></p>
+        <h2 class="quote">A Bond We Need</h2>
+    </div>
+
+    <h1 class="cam">Anti-Depressing Facecam</h1>
+
+    <div class="top-container">
+      <video id="video">Stream not available...</video>
+      <button id="photo-button" class="btn btn-dark">
+        Take Photo
+      </button>
+      <select id="photo-filter" class="select">
+        <option value="none">Normal</option>
+        <option value="grayscale(100%)">Grayscale</option>
+        <option value="sepia(100%)">Sepia</option>
+        <option value="invert(100%)">Invert</option>
+        <option value="hue-rotate(90deg)">Hue</option>
+        <option value="blur(10px)">Blur</option>
+        <option value="contrast(200%)">Contrast</option>
+      </select>
+      <button id="clear-button" class="btn btn-light">Clear</button>
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="bottom-container">
+      <div id="photos"></div>
+    </div>
+
+    <script src="../js/videoFilter.js"></script>
+    <p>
+      <a href="./index.html">Back Home</a>
+    </p>
+  </body>
+</html>
