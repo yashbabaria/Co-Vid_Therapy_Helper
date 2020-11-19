@@ -3,8 +3,15 @@ body{
 }
 .center{
   text-align: center;
+  font-family: "Times New Roman";
 }
+.header{
+  text-align: center; 
+  font-size:170%;
+  color: #e68a00 ;
+  font-family: "Times New Roman";
 
+}
 .mainTitle{
   text-align: center;
   color: #e68a00
@@ -32,6 +39,7 @@ body{
   margin: auto;
   width: 20%;
   height: auto;
+  padding: 5px;
 }
 
 .imgAlign{
